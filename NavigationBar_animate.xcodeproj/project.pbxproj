@@ -18,6 +18,14 @@
 		7C7CCDF0259B5BB000BE559C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7CCDEF259B5BB000BE559C /* SecondViewController.swift */; };
 		7C7CCDF8259B5C2600BE559C /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7CCDF7259B5C2600BE559C /* SecondView.swift */; };
 		7C7CCDFE259B796500BE559C /* UIButton+Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7CCDFD259B796500BE559C /* UIButton+Events.swift */; };
+		7CD0369125ADC663007DE3C5 /* ThirdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD0368F25ADC663007DE3C5 /* ThirdCell.swift */; };
+		7CD0369225ADC663007DE3C5 /* ThirdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0369025ADC663007DE3C5 /* ThirdCell.xib */; };
+		7CD0369725ADC885007DE3C5 /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD0369625ADC885007DE3C5 /* Third.storyboard */; };
+		7CD0369C25ADC89B007DE3C5 /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD0369B25ADC89B007DE3C5 /* ThirdVC.swift */; };
+		7CD036A825ADC97B007DE3C5 /* DummyStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD036A725ADC97B007DE3C5 /* DummyStr.swift */; };
+		7CD036BE25ADD023007DE3C5 /* ThirdHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD036BC25ADD023007DE3C5 /* ThirdHeader.swift */; };
+		7CD036BF25ADD023007DE3C5 /* ThirdHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD036BD25ADD023007DE3C5 /* ThirdHeader.xib */; };
+		7CD036C725ADD736007DE3C5 /* StretchHeaderLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD036C625ADD736007DE3C5 /* StretchHeaderLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +63,14 @@
 		7C7CCDEF259B5BB000BE559C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		7C7CCDF7259B5C2600BE559C /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		7C7CCDFD259B796500BE559C /* UIButton+Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Events.swift"; sourceTree = "<group>"; };
+		7CD0368F25ADC663007DE3C5 /* ThirdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCell.swift; sourceTree = "<group>"; };
+		7CD0369025ADC663007DE3C5 /* ThirdCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdCell.xib; sourceTree = "<group>"; };
+		7CD0369625ADC885007DE3C5 /* Third.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Third.storyboard; sourceTree = "<group>"; };
+		7CD0369B25ADC89B007DE3C5 /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
+		7CD036A725ADC97B007DE3C5 /* DummyStr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyStr.swift; sourceTree = "<group>"; };
+		7CD036BC25ADD023007DE3C5 /* ThirdHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdHeader.swift; sourceTree = "<group>"; };
+		7CD036BD25ADD023007DE3C5 /* ThirdHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdHeader.xib; sourceTree = "<group>"; };
+		7CD036C625ADD736007DE3C5 /* StretchHeaderLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchHeaderLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +121,10 @@
 		7C7CCDB4259B5A7A00BE559C /* NavigationBar_animate */ = {
 			isa = PBXGroup;
 			children = (
+				7CD036A325ADC955007DE3C5 /* Resource */,
 				7C7CCDFC259B794900BE559C /* Extension */,
 				7C7CCDEB259B5B8700BE559C /* SecondViewController */,
+				7CD0368025ADC39D007DE3C5 /* ThirdViewContorller */,
 				7C7CCDB5259B5A7A00BE559C /* AppDelegate.swift */,
 				7C7CCDB7259B5A7A00BE559C /* SceneDelegate.swift */,
 				7C7CCDB9259B5A7A00BE559C /* ViewController.swift */,
@@ -151,6 +169,44 @@
 				7C7CCDFD259B796500BE559C /* UIButton+Events.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		7CD0368025ADC39D007DE3C5 /* ThirdViewContorller */ = {
+			isa = PBXGroup;
+			children = (
+				7CD036BB25ADD00A007DE3C5 /* Header */,
+				7CD0368E25ADC640007DE3C5 /* Cell */,
+				7CD0369625ADC885007DE3C5 /* Third.storyboard */,
+				7CD0369B25ADC89B007DE3C5 /* ThirdVC.swift */,
+			);
+			path = ThirdViewContorller;
+			sourceTree = "<group>";
+		};
+		7CD0368E25ADC640007DE3C5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7CD0368F25ADC663007DE3C5 /* ThirdCell.swift */,
+				7CD0369025ADC663007DE3C5 /* ThirdCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7CD036A325ADC955007DE3C5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7CD036A725ADC97B007DE3C5 /* DummyStr.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		7CD036BB25ADD00A007DE3C5 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				7CD036BD25ADD023007DE3C5 /* ThirdHeader.xib */,
+				7CD036BC25ADD023007DE3C5 /* ThirdHeader.swift */,
+				7CD036C625ADD736007DE3C5 /* StretchHeaderLayout.swift */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +313,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C7CCDC2259B5A7C00BE559C /* LaunchScreen.storyboard in Resources */,
+				7CD0369225ADC663007DE3C5 /* ThirdCell.xib in Resources */,
+				7CD036BF25ADD023007DE3C5 /* ThirdHeader.xib in Resources */,
 				7C7CCDBF259B5A7C00BE559C /* Assets.xcassets in Resources */,
 				7C7CCDBD259B5A7A00BE559C /* Main.storyboard in Resources */,
+				7CD0369725ADC885007DE3C5 /* Third.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,9 +343,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C7CCDF0259B5BB000BE559C /* SecondViewController.swift in Sources */,
+				7CD036A825ADC97B007DE3C5 /* DummyStr.swift in Sources */,
 				7C7CCDF8259B5C2600BE559C /* SecondView.swift in Sources */,
 				7C7CCDBA259B5A7A00BE559C /* ViewController.swift in Sources */,
+				7CD036C725ADD736007DE3C5 /* StretchHeaderLayout.swift in Sources */,
+				7CD0369C25ADC89B007DE3C5 /* ThirdVC.swift in Sources */,
 				7C7CCDB6259B5A7A00BE559C /* AppDelegate.swift in Sources */,
+				7CD036BE25ADD023007DE3C5 /* ThirdHeader.swift in Sources */,
+				7CD0369125ADC663007DE3C5 /* ThirdCell.swift in Sources */,
 				7C7CCDFE259B796500BE559C /* UIButton+Events.swift in Sources */,
 				7C7CCDB8259B5A7A00BE559C /* SceneDelegate.swift in Sources */,
 			);

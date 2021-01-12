@@ -17,20 +17,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjb-39-QT0">
-                                <rect key="frame" x="121.5" y="430" width="171" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="push viewcontroller"/>
-                                <connections>
-                                    <action selector="pressPushViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PHP-Dp-O0H"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gn1-8t-3li">
+                                <rect key="frame" x="178" y="402" width="58" height="92"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjb-39-QT0">
+                                        <rect key="frame" x="0.0" y="0.0" width="58" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="style 1"/>
+                                        <connections>
+                                            <action selector="pressPushViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PHP-Dp-O0H"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAg-oR-8ox">
+                                        <rect key="frame" x="0.0" y="56" width="58" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="style 2"/>
+                                        <connections>
+                                            <action selector="pressPushViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L7Y-8G-hwO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zjb-39-QT0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="67i-4q-bgZ"/>
-                            <constraint firstItem="zjb-39-QT0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="skc-06-2jd"/>
+                            <constraint firstItem="gn1-8t-3li" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0pR-a9-7Yn"/>
+                            <constraint firstItem="gn1-8t-3li" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Thc-u0-5br"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3Fe-3t-dWE"/>
